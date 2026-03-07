@@ -13,7 +13,7 @@
     "fs:findByExt": "node src/fs/findByExt.js --ext txt",
     "fs:merge": "node src/fs/merge.js",
     "cli:interactive": "node src/cli/interactive.js",
-    "cli:progress": "node src/cli/progress.js",
+    "cli:progress": "node src/cli/progress.js --color '#FFFF00' --duration 1000",
     "modules:dynamic": "node src/modules/dynamic.js uppercase",
     "hash:verify": "node src/hash/verify.js",
     "streams:lineNumberer": "echo 'hello\nworld' | node src/streams/lineNumberer.js",
