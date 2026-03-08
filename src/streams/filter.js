@@ -1,7 +1,6 @@
 import stream from "node:stream";
 import process from "node:process";
 
-const filter = () => {
   const getPattern = () => {
     const indexOfPattern = process.argv.indexOf("--pattern");
 
@@ -11,6 +10,7 @@ const filter = () => {
 
     return "";
   };
+const filter = () => {
 
   const pattern = getPattern();
 
