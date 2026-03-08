@@ -3,10 +3,10 @@ node_modules/
 *.log
 npm-debug.log*
 .env
-workspace/
+# workspace/
 workspace_restored/
 snapshot.json
-data.json
-checksums.json
-source.txt
+# data.json
+# checksums.json
+# source.txt
 chunk_*.txt
