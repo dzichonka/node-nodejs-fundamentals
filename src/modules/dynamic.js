@@ -1,7 +1,7 @@
-import { argv } from "node:process";
+import process from "node:process";
 
 const dynamic = async () => {
-  const pluginName = argv[2];
+  const pluginName = process.argv[2];
 
   if (!pluginName) {
     console.log("Plugin not found");

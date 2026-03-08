@@ -1,13 +1,13 @@
-import fs from "fs/promises";
-import fsSync from "fs";
-import { createHash } from "node:crypto";
+import fs from "node:fs/promises";
+import fsSync from "node:fs";
+import cripto from "node:crypto";
 import path from "node:path";
 
 const __dirname = "./";
 
 async function hashFile(filePath) {
   return new Promise((resolve, reject) => {
-    const hash = createHash("sha256");
+    const hash = cripto.createHash("sha256");
     const stream = fsSync.createReadStream(filePath);
 
     stream.on("error", reject);

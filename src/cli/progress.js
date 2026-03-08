@@ -1,12 +1,12 @@
-import { argv } from "node:process";
+import process from "node:process";
 
 const parseArgs = () => {
   const args = {};
 
-  for (let i = 2; i < argv.length; i += 1) {
-    if (argv[i].startsWith("--")) {
-      const key = argv[i].slice(2);
-      const value = argv[i + 1];
+  for (let i = 2; i < process.argv.length; i += 1) {
+    if (process.argv[i].startsWith("--")) {
+      const key = process.argv[i].slice(2);
+      const value = process.argv[i + 1];
       args[key] = value;
       i++;
     }
